@@ -1,0 +1,10 @@
+<!--pages/login/login.wxml-->
+
+<view class='login-container'>
+  <image src='/images/logo.png'></image>
+  <view class='text'>
+    <text class='title'>申请获取以下权限</text>
+    <text>获取您的公开信息(昵称，头像等)</text>
+  </view>
+  <button hover-class="none" lang="zh_CN" open-type="getUserInfo" bindgetuserinfo="access">授权登录</button>
+</view>

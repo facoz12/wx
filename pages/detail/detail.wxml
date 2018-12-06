@@ -1,0 +1,97 @@
+<!--pages/detail/detail.wxml-->
+<view>
+    <view class='deailImagesWrap'>
+      <swiper class='detailImages' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" data-src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <scroll-view scroll-y="true">
+      <view class="detail">
+        <text class="title">期刊名称期刊名称期刊名称期刊名称期刊名称期刊名称期刊名称期刊名称</text>
+      </view>
+      <view class='detail-price-num'>
+        <text class='detail-price'>￥100.00</text>
+        <text class='detail-num'>订阅1232</text>
+      </view>
+      <!-- 规格选择 -->
+      <view class='bgc'>
+        <view class='Specification'>
+          <text>规格</text><text>请选择</text><text>></text>
+        </view>
+      </view>
+      <!--  商品详情/评价 -->
+      <view class="detailTabCtrl {{menuFixed ? 'fixed': ''}}" id="fix">
+        <view id='Per' class='{{shy?"detailTabClick" : "detailNomal"}}' bindtap='shy'>期刊详情</view>
+        <view id='Eva' class='{{riook?"detailTabClick" : "detailNomal"}}' bindtap='riook'>积累评价</view>
+      </view>
+      <view class='detailTabCont'>  
+        <view class='descriptionWrap {{riook?"detHidd" : "detShow"}}' wx:for='{{detTeletext}}'>
+          <text class='description'>刊期描述</text>
+          <view class='descriptionCont'>文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述文字描述</view>
+          <image  class='descriptionImages'></image>
+        </view>
+        <view class='{{shy?"detHidd" : "detShow"}}' wx:for='{{detEva}}'>
+          <view class='rating'>
+            <view class='onrat'>全部</view>
+            <view>好评</view>
+            <view>中评</view>
+            <view>差评</view>
+          </view>
+          <view class=' rating-cont eva-null'>
+            <view class='ratingL'>
+              <view class='UserImg'></view>
+            </view>
+            <view class='ratingR'>
+              <text class='UserName'>R*********t</text>
+              <text class='ratingTime'>2017.2.17 订刊周期：一年</text>
+              <view class='ratStar'>
+                <image src='/images/addlike-on.png'></image>
+                <image src='/images/addlike-on.png'></image>
+              </view>
+              <view class='ratText'>
+                孩子特别喜欢，一回来就津津有味的看起来，感觉他激发了阅读兴趣，明年还会接着订的，很有益。
+              </view>
+            </view>
+          </view>
+          <view class='cont-null'>
+            <image src='/images/null-eva.png'></image>
+            <view> <text>暂无评价</text></view>
+          </view>
+        </view>
+      </view>
+      <view style='height: 3120rpx; background: skyblue;'></view>
+    </scroll-view>
+    
+    <!-- 底部悬浮栏 -->
+    <view class="detail-nav">
+      <view class='navIconWrap'>
+        <view>
+          <image bindtap="service" src="/images/service.png" />
+         <text>客服</text>
+        </view>
+         
+        <view>
+           <image bindtap='addLike' src='/images/add-off.png' />
+           <text>收藏</text>
+        </view>
+
+        <view>
+          <image bindtap="toCar" src="/images/go-cart.png" />
+          <text>购物车</text>
+        </view>
+         
+      </view>
+        
+      
+      <view>
+        <button class="button-car" bindtap="addCar" formType="submit">加入购物车</button>
+        <button class="button-buy" bindtap="immeBuy" formType="submit">立即订购</button>
+      </view>
+     
+    </view>
+</view>

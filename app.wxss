@@ -1,0 +1,5 @@
+/**app.wxss**/
+@import "/wxParse/wxParse.wxss";
+page{
+  color:#292928;
+}

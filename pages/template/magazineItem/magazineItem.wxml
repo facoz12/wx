@@ -1,0 +1,11 @@
+<!--pages/template/magazineItem/magazineItem.wxml-->
+<template name="magazineItem">
+  <view class='magazine-item' catchtap='toDetail'>
+    <image src='/images/img-example.jpg'></image>
+    <view class='title'>期刊名称期刊名称期刊名称</view>
+    <view class='price-num'>
+      <text class='price'>￥100.00</text>
+      <text class='num'>订阅13546</text>
+    </view>
+  </view>
+</template>

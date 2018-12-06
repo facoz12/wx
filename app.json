@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/orderSuccessfully/orderSuccessfully",
+    "pages/submitOrder/submitOrder",
+    "pages/index/index",
+    "pages/detail/detail",
+    
+    "pages/cart/cart",
+    "pages/my/my"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "都市人",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "#EEEEEE",
+    "selectedColor": "#FFAF5E",
+    "color": "#DFDBD8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "订阅",
+        "iconPath": "/images/magazine.png",
+        "selectedIconPath": "/images/magazine-s.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/images/cart.png",
+        "selectedIconPath": "/images/cart-s.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my-s.png"
+      }
+    ]
+  }
+}

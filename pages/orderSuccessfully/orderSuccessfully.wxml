@@ -1,0 +1,29 @@
+<!--pages/orderSuccessfully/orderSuccessfully.wxml-->
+<image class='background-img' src='/images/order-successfully.png'></image>
+<view class='notice'>
+  <view class='notice-top'>
+    <view class='orderImg'><image src='/images/1.png'></image></view>
+    <view class='orderText'><text>每月邮寄前七日，我们将发信息通知，若需要更改收货地址，请到个人中心页/订阅详情页修改</text></view>
+  </view>
+  <view class='notice-button'>
+    <button>返回首页</button>
+    <button>查看详情</button>
+  </view>
+</view>
+<view class='order-shop'>
+  <image src='/images/img-example.jpg'></image>
+  <view class='shop-text'>
+    <text>期刊名称期刊名称期刊名称期刊名称期刊名称</text>
+    <view class='marginTop'><image src='/images/2.png'></image><text class='bold'>订阅周期：</text><text>2121</text></view>
+    <view class='margin-top'><image src='/images/3.png'></image><text class='bold'>邮寄日期：</text><text>351351</text></view>
+  </view>
+</view>
+<view class='order-shop'>
+  <image src='/images/img-example.jpg'></image>
+  <view class='shop-text'>
+    <text>期刊名称期刊名称期刊名称期刊名称期刊名称</text>
+    <view class='marginTop'><image src='/images/2.png'></image><text class='bold'>订阅周期：</text><text>2121</text></view>
+    <view class='margin-top'><image src='/images/3.png'></image><text class='bold'>邮寄日期：</text><text>351351</text></view>
+  </view>
+</view>
+

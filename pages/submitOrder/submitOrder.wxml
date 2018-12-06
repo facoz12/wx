@@ -1,0 +1,45 @@
+<!--pages/submitOrder/submitOrder.wxml-->
+<view>
+  <view class='shippingAddress-unselected'>
+    <image src='/images/land.png'></image>
+    <view>新建收货地址</view>
+  </view>
+  <view class='shippingAddress-selected sub-hidd'>
+    <view class='botton-layer'>
+      <image src='/images/land.png'></image>收货人：
+      <text style='margin-right: 124rpx;'>晴天</text>
+      <image src='/images/phone.png'></image>
+      <text>24544544</text>
+    </view>
+
+    <view class='site-detail'>
+      收货地址： <text>广东省广州市天河区XXXX街道</text>
+      <view class='site-num'><text>xxx号</text><text>xxx室</text></view>
+      <text class='after-arrow'>></text> 
+    </view>
+    <view class='school-mes'><image src='/images/linkman.png'></image><text>广州中心小学 三年一班 李莉莉</text></view>
+  </view>
+  <view class='spacer-layer'></view>
+  <view class='shoppingList' wx:for='{{shopList}}'>
+      <image class='ShopListImg' src='/images/img-example.jpg'></image>
+      <view class='ShopListText'>
+        <view class='shop-name'><text>期刊名称期刊名称期刊名称期刊名称期刊名称期刊名称期刊名称</text></view>
+        <text class='send-per'>订阅周期：</text><text class='send-time'>发货周期：</text>
+        <view class='buy-time'>480~492期（2018/03/26 ~2019/03/26）</view>
+        <view class='pricer-top'> <text class='shop-price'>￥55.55</text> <text class='shop-num'>X1</text></view>
+      </view> 
+  </view> 
+  <view class='spacer-layer'></view>
+  <view class='messageBoard'>
+    <text>给商家留言：</text> 
+    <textarea></textarea>
+  </view>
+  <view class='all-shop'>
+    <text class='all-num'>共计几件商品</text>合计：<text class='all-price'>多少钱</text>
+  </view>
+  <view class='spacer-layer'></view>
+  <view class='fixd-bottom'>
+    <view>合计：<text>￥100.00</text></view> <view><button type='submit'>立即订购</button></view>
+  </view>
+</view>
+  
